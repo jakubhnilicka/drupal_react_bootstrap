@@ -1,0 +1,6 @@
+react-bootstrap:
+  version: 1.x
+  js:
+    dist/react_bootstrap.js: { minified: true }
+  dependencies:
+    - core/drupalSettings
