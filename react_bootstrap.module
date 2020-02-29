@@ -14,5 +14,6 @@ function react_bootstrap_preprocess_node(&$variables) {
 }
 
 function react_bootstrap_page_attachments(array &$page) {
-  $page['#attached']['library'][] = 'react_bootstrap/react-bootstrap';
+  $page['#attached']['library'][] = 'react_bootstrap/root';
+  $page['#attached']['library'][] = 'react_bootstrap/root2';
 }

@@ -1,6 +1,22 @@
-react-bootstrap:
+react:
+  version: 1.x
+  header: true
+  js:
+    https://unpkg.com/react@16/umd/react.production.min.js: { external: true, minified: true }
+    https://unpkg.com/react-dom@16/umd/react-dom.production.min.js: { external: true, minified: true }
+
+root:
   version: 1.x
   js:
-    dist/react_bootstrap.js: { minified: true }
+    dist/root.build.js: { minified: true }
   dependencies:
     - core/drupalSettings
+    - react_bootstrap/react
+
+root2:
+  version: 1.x
+  js:
+    dist/root2.build.js: { minified: true }
+  dependencies:
+    - core/drupalSettings
+    - react_bootstrap/react
