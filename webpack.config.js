@@ -1,7 +1,8 @@
 const path = require("path");
-const CompressionPlugin = require('compression-webpack-plugin');
 
 const config = {
+  // Use multiple entry files.
+  // Uses format "OUTPUT FILE NAME": "ENTRY FILE PATH".
   entry: {
     "root": "./js/src/root.js",
     "root2": "./js/src/root2.js",
@@ -23,6 +24,8 @@ const config = {
       }
     ]
   },
+  // Remove react from build.
+  // We are adding them as external library because size of multiple components.
   externals: {
     'react': 'React',
     'react-dom': 'ReactDOM'
